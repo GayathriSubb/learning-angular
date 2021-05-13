@@ -47,6 +47,14 @@ export class ProfileService {
     })
   }
 
+
+  updateUser(profile) {
+    console.log(profile);
+    this.http.put(`http://localhost:3000/profiles/${profile.id}`, profile).subscribe(() => {
+      this.getProfiles()
+    })
+  }
+
   selectUserProfile(profile) {
     this.userProfileSelected.next(profile);
   }
