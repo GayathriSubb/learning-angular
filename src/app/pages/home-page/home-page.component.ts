@@ -13,7 +13,6 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
   addUserProfile(profile)
     {
         this.profile.addUserProfile(profile)

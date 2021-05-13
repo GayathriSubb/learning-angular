@@ -25,4 +25,9 @@ export class AppComponent implements OnInit {
     this.profiles.selectUserProfile(profile)
   }
 
+  deleteUser(profile)
+    {
+      this.profiles.deleteUser(profile)
+    }
+
 }

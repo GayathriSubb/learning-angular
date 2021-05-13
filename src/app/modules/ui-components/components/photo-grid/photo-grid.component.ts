@@ -9,7 +9,8 @@ export class PhotoGridComponent implements OnInit {
 
   @Input() profiles = [];
 
-  @Output() profileselected : EventEmitter<any> = new EventEmitter()
+  @Output() profileselected : EventEmitter<any> = new EventEmitter();
+  @Output() deleteuser : EventEmitter<any> = new EventEmitter()
 
   constructor() { }
 
@@ -19,6 +20,10 @@ export class PhotoGridComponent implements OnInit {
   selectuser(profile)
     {
         this.profileselected.emit(profile)
+    }
+
+    deleteUser(profile){
+        this.deleteuser.emit(profile)
     }
 
 }
