@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row class="nav-row">
+        <edureka-navigation></edureka-navigation>
+        <edureka-user-profile *ngIf="toggleUserProfile" (logout)="clearProfileData($event)" [profile]="userprofile">
+        </edureka-user-profile>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+
+<!-- <header>
+    
+    
+</header>
+
+<input [(ngModel)]="userprofile.intials" />
+Intials value is {{userprofile.intials}}
+
+<button (click)="changeValue()">Change value</button>
+<button (click)="changeRef()">Change Ref</button>
+<button (click)="toggleProfile()">Toggle User Profile</button> -->

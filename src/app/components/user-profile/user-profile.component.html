@@ -1,0 +1,9 @@
+<div *ngIf="userProfile">
+    <button mat-mini-fab color="accent" aria-label="Example icon button with a menu icon">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+    </button>
+    <button (click)="logoutUser()">logout</button>
+</div>
+<div *ngIf="!userProfile">
+    <button>Login</button>
+</div>
