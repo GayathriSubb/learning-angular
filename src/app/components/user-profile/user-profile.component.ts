@@ -10,6 +10,8 @@ interface IProfile {
   intials : string
 }
 
+// OnInit, OnChanges, OnDestroy, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked
+
 @Component({
   selector: 'edureka-user-profile',
   templateUrl: "./user-profile.component.html",
@@ -19,7 +21,7 @@ interface IProfile {
   styleUrls: ['./user-profile.component.scss'],
   changeDetection : ChangeDetectionStrategy.OnPush
 })
-export class UserProfileComponent implements OnInit, OnChanges, OnDestroy, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked{
+export class UserProfileComponent {
 
   // @Input() profile: IProfile | null = null;
   @Input("profile") userProfile : IProfile | null = null;
@@ -31,46 +33,46 @@ export class UserProfileComponent implements OnInit, OnChanges, OnDestroy, DoChe
   timer = null;  
 
   ngOnChanges(){
-      console.log("ngOnChanges")
+      // console.log("ngOnChanges")
   }
 
   ngOnInit(): void {
     // API Request
     // Setup data
-    console.log("ngOnInit")
+    // console.log("ngOnInit")
     //this.timer = setInterval(function(){ console.log("hello!!!") }, 1000)
   }
 
-  ngOnDestroy()
-    {
-      clearInterval(this.timer)
-      console.log("ngOnDestroy")
-    }
+  // ngOnDestroy()
+  //   {
+  //     clearInterval(this.timer)
+  //     console.log("ngOnDestroy")
+  //   }
 
-  ngDoCheck()
-    {
-      console.log("ngDoCheck")
-    }
+  // ngDoCheck()
+  //   {
+  //     console.log("ngDoCheck")
+  //   }
 
-  ngAfterContentInit()
-    {
-      console.log("ngAfterContentInit")
-    }
+  // ngAfterContentInit()
+  //   {
+  //     console.log("ngAfterContentInit")
+  //   }
 
-  ngAfterContentChecked()
-    {
-      console.log("ngAfterContentChecked")
-    }
+  // ngAfterContentChecked()
+  //   {
+  //     console.log("ngAfterContentChecked")
+  //   }
 
-  ngAfterViewInit()
-    {
-      console.log("ngAfterViewInit")
-    }
+  // ngAfterViewInit()
+  //   {
+  //     console.log("ngAfterViewInit")
+  //   }
 
-  ngAfterViewChecked()
-    {
-      console.log("ngAfterViewChecked")
-    }
+  // ngAfterViewChecked()
+  //   {
+  //     console.log("ngAfterViewChecked")
+  //   }
 
 
   logoutUser()

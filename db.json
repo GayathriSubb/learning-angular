@@ -1,58 +1,16 @@
 {
   "profiles": [
     {
-      "name": "ffgdgdfgg dog dfg",
-      "address": "gdfg gig dgdfgdfggd fgfd gdfg",
-      "picture": "gdfgdfg dfgdf g",
+      "name": "fsdfsafsdfsd",
+      "address": "sdfsdfdsf",
+      "picture": "fsdf",
+      "id": 1
+    },
+    {
+      "name": "dsff dsf fdsfd ",
+      "address": "sdfsdfdsff sdf fds",
+      "picture": "fs dfsd f",
       "id": 2
-    },
-    {
-      "name": "fsdfsfs",
-      "address": "sfsdf",
-      "picture": "fsdf",
-      "id": 3
-    },
-    {
-      "name": "fsdfsfs",
-      "address": "sfsdf",
-      "picture": "fsdf",
-      "id": 4
-    },
-    {
-      "name": "fsdfsfs",
-      "address": "sfsdf",
-      "picture": "fsdf",
-      "id": 5
-    },
-    {
-      "name": "fsdfsfs",
-      "address": "sfsdf",
-      "picture": "fsdf",
-      "id": 6
-    },
-    {
-      "name": "fsdfsfs",
-      "address": "sfsdf",
-      "picture": "fsdf",
-      "id": 7
-    },
-    {
-      "name": "fsdfsfs",
-      "address": "sfsdf",
-      "picture": "fsdf",
-      "id": 8
-    },
-    {
-      "name": "fsdfsfs",
-      "address": "sfsdf",
-      "picture": "fsdf",
-      "id": 9
-    },
-    {
-      "name": "fsdfsfs",
-      "address": "sfsdf",
-      "picture": "fsdf",
-      "id": 10
     }
   ]
 }

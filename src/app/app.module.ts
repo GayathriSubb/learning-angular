@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { FormsModule } from "@angular/forms";
+// Template Driven Forms - FormsModule
+// Model Driven Forms / Reactive Forms - ReactiveFormsModule
+
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { HttpClientModule } from "@angular/common/http"
 
@@ -24,6 +27,7 @@ import { MatCardModule } from "@angular/material/card"
 import { UiComponentsModule } from './modules/ui-components/ui-components.module';
 import { ListingComponent } from './components/listing/listing.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { LoginFormComponent } from './forms/login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +39,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     CartComponent,
     ListingComponent,
     HomePageComponent,
+    LoginFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +51,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     MatIconModule,
     MatCardModule,
     UiComponentsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
