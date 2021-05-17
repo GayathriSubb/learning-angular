@@ -1,5 +1,12 @@
 {
-  "users" : [],
+  "users": [
+    {
+      "email": "fsdfdsf@dsfdsf.fdf",
+      "password": "$2a$10$zsAN9eRUxaqDLsM8l8XqcOmsicYooonlc1eGdsZua2dDJS5n2I8l2",
+      "username": "fsdfsfsf",
+      "id": 1
+    }
+  ],
   "profiles": [
     {
       "name": "fsdfsafsdfsd",
