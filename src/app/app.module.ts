@@ -28,6 +28,7 @@ import { UiComponentsModule } from './modules/ui-components/ui-components.module
 import { ListingComponent } from './components/listing/listing.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { LoginFormComponent } from './forms/login-form/login-form.component';
+import { RegisterFormComponent } from './forms/register-form/register-form.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { LoginFormComponent } from './forms/login-form/login-form.component';
     ListingComponent,
     HomePageComponent,
     LoginFormComponent,
+    RegisterFormComponent,
   ],
   imports: [
     BrowserModule,

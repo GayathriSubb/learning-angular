@@ -1,0 +1,42 @@
+<form [formGroup]="registerForm" (ngSubmit)="register()" >
+    <p>
+        <label>
+            Username
+            <input name="username" formControlName="username" />
+        </label>
+        <!-- <span class="form-errors" *ngIf="username.errors && username.touched">
+            <span>This is a required value.</span>
+        </span> -->
+    </p>
+    <p>
+        <label>
+            Email
+            <input name="username" formControlName="email" />
+        </label>
+        <!-- <span class="form-errors" *ngIf="username.errors && username.touched">
+            <span>This is a required value.</span>
+        </span> -->
+    </p>
+    <p>
+        <label>
+            Password
+            <input type="password" name="password" formControlName="password"/>
+        </label>
+        <!-- <span class="form-errors" *ngIf="password.errors && password.touched">
+            <span *ngIf="password.errors.required">This is a required value.</span>
+            <span *ngIf="password.errors.minlength">Please provide 8 chars</span>
+        </span> -->
+    </p>
+    <p>
+        <label>
+            Confirm Password
+            <input type="password" name="confirm-password" formControlName="confirmPassword"/>
+        </label>
+        <!-- <span class="form-errors" *ngIf="password.errors && password.touched">
+            <span *ngIf="password.errors.required">This is a required value.</span>
+            <span *ngIf="password.errors.minlength">Please provide 8 chars</span>
+        </span> -->
+    </p>
+    <!-- [disabled]="loginForm.status === 'INVALID'" -->
+    <button type="submit">Register</button>
+</form>
