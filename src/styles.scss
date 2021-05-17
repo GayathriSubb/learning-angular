@@ -1,4 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
+// ng-touched
+// ng-touched
+// ng-invalid
+// ng-invalid
+// ng-pristine
+// ng-dirty
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+form {
+    .ng-touched.ng-invalid { border: 1px solid red; color : red } 
+
+    .form-errors {
+        span {
+            color : red
+        }
+    }
+}
+

@@ -18,10 +18,3 @@ export function CompareValidator(control1 : string, control2: string)
                 }
         }
     }
-
-// no paramters
-
-export function ValidatonWithNoParams()
-    {
-
-    }
