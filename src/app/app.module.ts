@@ -32,6 +32,8 @@ import { RegisterFormComponent } from './forms/register-form/register-form.compo
 import { ProductlistingPageComponent } from './pages/productlisting-page/productlisting-page.component';
 import { ProductdetailsPageComponent } from './pages/productdetails-page/productdetails-page.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { RegisterPageComponent } from './pages/register-page/register-page.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { CartPageComponent } from './pages/cart-page/cart-page.component';
     ProductlistingPageComponent,
     ProductdetailsPageComponent,
     CartPageComponent,
+    LoginPageComponent,
+    RegisterPageComponent,
   ],
   imports: [
     BrowserModule,

@@ -15,7 +15,7 @@ export class RegisterFormComponent implements OnInit {
   // prodapt.in
 
   registerForm: FormGroup = new FormGroup({
-    username: new FormControl("dasdadasd", [Validators.required, Validators.minLength(8)]),
+    username: new FormControl("", [Validators.required, Validators.minLength(8)]),
     email: new FormControl("", [Validators.required, ProdaptEmail]),
     // email : new FormControl("", [Validators.required, Validators.pattern(/[a-z]@prodapt.com/)]),
     password: new FormControl("", [Validators.required, Validators.minLength(8)]),
@@ -32,16 +32,8 @@ export class RegisterFormComponent implements OnInit {
 
     // HTTP Response
     // const user = { email : "abc@xyz.com", username : "abc" };
-    // this.registerForm.setValue({
-    //   email : user.email,
-    //   username : user.username,
-    //   password : "",
-    //   confirmPassword : "",
-    // })
-
+    // this.registerForm.setValue({ ...this.registerForm.value, email : user.email, username : user.username })
     // this.registerForm.get("username").setValue("new value");
-
-
   }
 
   register() {
@@ -51,8 +43,8 @@ export class RegisterFormComponent implements OnInit {
     //     this.registerForm.get(control).markAsTouched()
     // })
 
-    console.log(this.registerForm);
-    // this.account.register(this.registerForm.value)
+    // console.log(this.registerForm);
+    this.account.register(this.registerForm.value)
   }
 
 

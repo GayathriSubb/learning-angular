@@ -9,18 +9,17 @@ import { AccountService } from 'src/app/services/account.service';
 export class LoginFormComponent implements OnInit {
 
   form = {
-    username : "",
-    password : ""
+    email: "",
+    password: ""
   }
 
-  constructor(private account : AccountService) { }
+  constructor(private account: AccountService) { }
 
   ngOnInit(): void {
   }
 
-  login(form)
-    {
-      this.account.login(form.value);
-    }
+  login(form) {
+    this.account.login(form.value);
+  }
 
 }
