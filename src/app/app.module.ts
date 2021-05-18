@@ -29,6 +29,9 @@ import { ListingComponent } from './components/listing/listing.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { LoginFormComponent } from './forms/login-form/login-form.component';
 import { RegisterFormComponent } from './forms/register-form/register-form.component';
+import { ProductlistingPageComponent } from './pages/productlisting-page/productlisting-page.component';
+import { ProductdetailsPageComponent } from './pages/productdetails-page/productdetails-page.component';
+import { CartPageComponent } from './pages/cart-page/cart-page.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,9 @@ import { RegisterFormComponent } from './forms/register-form/register-form.compo
     HomePageComponent,
     LoginFormComponent,
     RegisterFormComponent,
+    ProductlistingPageComponent,
+    ProductdetailsPageComponent,
+    CartPageComponent,
   ],
   imports: [
     BrowserModule,
