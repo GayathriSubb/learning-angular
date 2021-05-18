@@ -38,5 +38,55 @@
       "picture": "fs dfsd f",
       "id": 2
     }
+  ],
+  "products": [
+    {
+      "id" : 1,
+      "name": "Macbook Pro",
+      "price": 100000,
+      "discount": 15000,
+      "description": "",
+      "images": []
+    },
+    {
+      "id" : 2,
+      "name": "Macbook Air",
+      "price": 100000,
+      "discount": 15000,
+      "description": "",
+      "images": []
+    },
+    {
+      "id" : 3,
+      "name": "iPhone",
+      "price": 100000,
+      "discount": 15000,
+      "description": "",
+      "images": []
+    },
+    {
+      "id" : 4,
+      "name": "Note 10",
+      "price": 100000,
+      "discount": 15000,
+      "description": "",
+      "images": []
+    },
+    {
+      "id" : 5,
+      "name": "Note 20",
+      "price": 100000,
+      "discount": 15000,
+      "description": "",
+      "images": []
+    },
+    {
+      "id" : 6,
+      "name": "S21",
+      "price": 100000,
+      "discount": 15000,
+      "description": "",
+      "images": []
+    }
   ]
 }

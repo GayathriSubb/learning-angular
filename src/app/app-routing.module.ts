@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './guards/auth.guard';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { ProductdetailsPageComponent } from './pages/productdetails-page/productdetails-page.component';
@@ -9,15 +10,15 @@ import { RegisterPageComponent } from './pages/register-page/register-page.compo
 const routes: Routes = [
   {
     // "" > /
-    path: "", component: HomePageComponent
+    path: "", component: HomePageComponent, canActivate : [AuthGuard]
   },
   {
     // "products" > /products
-    path: "products", component: ProductlistingPageComponent
+    path: "products", component: ProductlistingPageComponent, canActivate : [AuthGuard]
   },
   {
     // "products/:productname" > /products/iphone
-    path: "products/:productname", component: ProductdetailsPageComponent
+    path: "products/:productname", component: ProductdetailsPageComponent, canActivate : [AuthGuard]
   },
   {
     // "products/:productname" > /products/iphone

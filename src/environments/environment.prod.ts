@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apibaseUrl : "http://prodapt.com/api/v1"
 };

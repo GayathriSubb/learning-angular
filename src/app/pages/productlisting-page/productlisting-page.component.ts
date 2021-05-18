@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/interfaces/products';
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'edureka-productlisting-page',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductlistingPageComponent implements OnInit {
 
-  constructor() { }
+  productsListing : Product[] = [];
+
+  constructor(private products : ProductsService) { }
 
   ngOnInit(): void {
+      this.products.getProductList().subscribe((response : Product[])=>{
+          this.productsListing = response
+          console.log(this.productsListing);
+      })
   }
 
 }

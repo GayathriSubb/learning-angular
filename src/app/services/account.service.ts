@@ -10,19 +10,21 @@ import IRegisterResponse from '../interfaces/register-response';
 })
 export class AccountService {
 
-  constructor(private http: HttpClient, private router : Router) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   login({ email, password }) {
-    this.http.post("http://localhost:3000/login", { email, password }).subscribe((response) => {
-      console.log(response);
+    this.http.post("http://localhost:3000/login", { email, password }).subscribe((response: IRegisterResponse) => {
+      window.localStorage.setItem("access-token", response.accessToken);
+      this.router.navigate([""])
     })
   }
 
   register({ email, username, password }) {
-    this.http.post("http://localhost:3000/register", { username, password, email }).subscribe((response: IRegisterResponse) => {
-      window.localStorage.setItem("access-token", response.accessToken)
-      this.router.navigate([""])
-    })
+    this.http.post("http://localhost:3000/register", { username, password, email })
+      .subscribe((response: IRegisterResponse) => {
+        window.localStorage.setItem("access-token", response.accessToken)
+        this.router.navigate([""])
+      })
   }
 
 }
